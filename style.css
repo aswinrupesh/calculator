@@ -1,14 +1,45 @@
-function buttonclick(val)
-{
-  document.getElementById("screen").value=document.getElementById("screen").value+val
+.calc{
+    width: 400px;
+    height: 550px;
+    background: rgb(83, 80, 80);
+    margin-left: 200px;
+}
+#screen{
+    width: 340px;
+    height: 60px;
+    position: fixed;
+    top: 20px;
+    left: 235px;
+    pointer-events: none;
+}
+.btn1{
+    width: 70px;
+    height: 50px;
+    margin-top: 30px;
+    margin-left: 22px;
+}
+.btn2{
+    width: 70px;
+    height: 50px;
+    margin-top: 40px;
+    margin-left: 22px;
+}
+.btn3{
+    width: 70px;
+    height: 50px;
+    margin-top: 40px;
+    margin-left: 22px;
+}
+.btn4{
+    width: 70px;
+    height: 50px;
+    margin-top: 40px;
+    margin-left: 22px;
+}
+.btn{
+    width: 70px;
+    height: 50px;
+    margin-top: 120px;
+    margin-left: 22px;
+}
 
-}
-function clearscreen(){
-  document.getElementById("screen").value=""
-}
-
-function equalclick(){
-  var text=document.getElementById("screen").value
-  var result=eval(text)
-  document.getElementById("screen").value=result
-}
